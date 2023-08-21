@@ -1,0 +1,7 @@
+.pytest*
+.venv
+.vscode
+docs
+mkdocs.yml
+__pycache__
+dist
