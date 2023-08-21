@@ -71,36 +71,50 @@ print(c)
 ```
 ````
 
-```shell
-INFO    -  Building documentation...
-INFO    -  Cleaning site directory
-source: a = 3
-b = 5
-c = a + b
-print(c)
-language: onecompiler
-css_class: onecompiler
-options: {}
-md: <markdown.core.Markdown object at 0x7f634a7ef910>
-attrs: {'lang': 'python', 'listenToEvents': 'true', 'filename': 'example.py', 'hideNew': 'true', 'hideStdin': 'true', 'hideNewFileOption': 'true', 'hideTitle': 'true', 'theme': 'dark'}
-classes: ['test']
-id_value: wtfid
-kwargs: {}
-debug: True
+You must run `mkdocs` with the verbose flag `-v` to print debug messages.
 
-<iframe id="wtfid" class="onecompiler test" frameBorder="0" src="https://onecompiler.com/embed/python?availableLanguages=true&hideLanguageSelection=false&hideNew=true&hideNewFileOption=true&disableCopyPaste=false&hideStdin=true&hideResult=false&hideTitle=true&listenToEvents=true&theme=dark" height="450px" width="100%" onload='this.contentWindow.postMessage({
-        eventType: "populateCode",
-        language: "python",
-        files: [
-            {
-                "name": "example.py",
-                "content": `a = 3
-b = 5
-c = a + b
-print(c)`
-            }
-        ]
-    }, "*");'>
-</iframe>
-INFO    -  Documentation built in 0.20 seconds
+```shell
+...
+INFO    -  Building documentation...
+DEBUG   -  Running 1 `config` events
+INFO    -  Cleaning site directory
+DEBUG   -  Reading markdown pages.
+DEBUG   -  Reading: index.md
+DEBUG   -  mkdocs_onecompiler_plugin: source: a = 3
+           b = 5
+           c = a + b
+           print(c)
+DEBUG   -  mkdocs_onecompiler_plugin: language: onecompiler
+DEBUG   -  mkdocs_onecompiler_plugin: css_class: onecompiler
+DEBUG   -  mkdocs_onecompiler_plugin: options: {}
+DEBUG   -  mkdocs_onecompiler_plugin: md: <markdown.core.Markdown object at
+           0x7f5f917bb6d0>
+DEBUG   -  mkdocs_onecompiler_plugin: attrs: {'lang': 'python', 'listenToEvents': 'true',
+           'filename': 'example.py', 'hideNew': 'true', 'hideStdin': 'true',
+           'hideNewFileOption': 'true', 'hideTitle': 'true', 'theme': 'dark', 'height':
+           '200px'}
+DEBUG   -  mkdocs_onecompiler_plugin: classes: ['test']
+DEBUG   -  mkdocs_onecompiler_plugin: id_value: wtfid2
+DEBUG   -  mkdocs_onecompiler_plugin: kwargs: {}
+DEBUG   -  mkdocs_onecompiler_plugin: debug: True
+DEBUG   -  mkdocs_onecompiler_plugin:
+           <iframe id="wtfid2" referrerpolicy="no-referrer" name="wtfid2"
+           class="onecompiler test"
+           src="https://onecompiler.com/embed/python?availableLanguages=true&hideLanguageSelection=false&hideNew=true&hideNewFileOption=true&disableCopyPaste=false&hideStdin=true&hideResult=false&hideTitle=true&listenToEvents=true&theme=dark"
+           height="200px" width="100%" onload='this.contentWindow.postMessage({
+                   eventType: "populateCode",
+                   language: "python",
+                   files: [
+                       {
+                           "name": "example.py",
+                           "content": String.raw`a = 3
+           b = 5
+           c = a + b
+           print(c)`
+                       }
+                   ]
+               }, "*");'>
+           </iframe>
+DEBUG   -  Copying static assets.
+...
 ```
