@@ -1,13 +1,13 @@
 from mkdocs_onecompiler_plugin.main import formatter
 
 html_output = """
-<iframe id="#id" class="onecompiler extra_class" frameBorder="0" src="https://onecompiler.com/embed/python?availableLanguages=true&hideLanguageSelection=false&hideNew=false&hideNewFileOption=false&disableCopyPaste=false&hideStdin=false&hideResult=false&hideTitle=false&listenToEvents=false&theme=dark" height="450px" width="100%" onload='this.contentWindow.postMessage({
+<iframe id="#id" referrerpolicy="no-referrer" name="#id" class="onecompiler extra_class" src="https://onecompiler.com/embed/python?availableLanguages=true&hideLanguageSelection=false&hideNew=false&hideNewFileOption=false&disableCopyPaste=false&hideStdin=false&hideResult=false&hideTitle=false&listenToEvents=false&theme=dark" height="450px" width="100%" onload='this.contentWindow.postMessage({
         eventType: "populateCode",
         language: "python",
         files: [
             {
                 "name": "untitled",
-                "content": `a = 3`
+                "content": String.raw`a = 3`
             }
         ]
     }, "*");'>

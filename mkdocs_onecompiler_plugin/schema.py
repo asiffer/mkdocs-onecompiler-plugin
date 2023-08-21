@@ -13,8 +13,7 @@ IFRAME_TEMPLATE = """
                 "content": String.raw`{content}`
             }}
         ]
-    }}, "*");
-    '>
+    }}, "*");'>
 </iframe>
 """
 
