@@ -6,7 +6,7 @@ on:
       - master
     paths:
       - "**.py"
-      - ".github/workflows/build.yaml"
+      - ".github/workflows/test.yaml"
       - "pyproject.toml"
   pull_request:
   workflow_dispatch:
