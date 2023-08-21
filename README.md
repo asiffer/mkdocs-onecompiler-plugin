@@ -1,6 +1,9 @@
 # mkdocs-onecompiler-plugin
 
 [![Build](https://github.com/asiffer/mkdocs-onecompiler-plugin/actions/workflows/build.yaml/badge.svg)](https://github.com/asiffer/mkdocs-onecompiler-plugin/actions/workflows/build.yaml)
+[![Test](https://github.com/asiffer/mkdocs-onecompiler-plugin/actions/workflows/test.yaml/badge.svg)](https://github.com/asiffer/mkdocs-onecompiler-plugin/actions/workflows/test.yaml)
+[![PyPI version](https://badge.fury.io/py/mkdocs-onecompiler-plugin.svg)](https://badge.fury.io/py/mkdocs-onecompiler-plugin)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 Include [OneCompiler](https://onecompiler.com/) online compiler to your mkdocs website.
 
