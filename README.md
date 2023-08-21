@@ -1,5 +1,7 @@
 # mkdocs-onecompiler-plugin
 
+[![Build](https://github.com/asiffer/mkdocs-onecompiler-plugin/actions/workflows/build.yaml/badge.svg)](https://github.com/asiffer/mkdocs-onecompiler-plugin/actions/workflows/build.yaml)
+
 Include [OneCompiler](https://onecompiler.com/) online compiler to your mkdocs website.
 
 ## Requirements

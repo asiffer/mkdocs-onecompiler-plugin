@@ -16,7 +16,7 @@ env:
   POETRY_VERSION: "1.6.0"
 
 jobs:
-  build:
+  test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -27,5 +27,7 @@ jobs:
         uses: abatilo/actions-poetry@v2
         with:
           poetry-version: ${{ env.POETRY_VERSION }}
-      - name: Run
+      - name: Install dependencies
+        run: poetry install
+      - name: Run test suite
         run: poetry run pytest -s -vv
